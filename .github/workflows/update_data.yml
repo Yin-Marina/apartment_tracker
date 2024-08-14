@@ -1,4 +1,4 @@
-name: Update Apartment Data and GitHub Pages
+name: Update Apartment Data
 
 # Controls when the action will run
 on:
@@ -44,9 +44,3 @@ jobs:
           git commit -m "Update data.json and regenerate index.html"
           git push origin main
 
-      # Step 6: Deploy to GitHub Pages (if you are using gh-pages branch)
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
