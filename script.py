@@ -88,3 +88,57 @@ if response.status_code == 200:
         print("Data for today has already been extracted.")
 else:
     print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
+
+
+# Define the URL of the webpage containing the data
+url = "https://www.fpm.ca/residential/328-frank-st"
+
+# Send a GET request to the webpage
+response = requests.get(url)
+
+# Check if the request was successful
+if response.status_code == 200:
+    # Extract the content of the webpage as text
+    webpage_content = response.text
+    
+    # Regular expressions to match the desired data
+    unit_type_pattern = r'<div class="suite-type cell">\s*<span class="hide-desktop cell-title">.*?</span>\s*(.*?)\s*</div>'
+    baths_pattern = r'<div class="suite-bath cell">\s*<span class="hide-desktop cell-title">.*?</span>\s*<span class="value">(\d+)</span>'
+    rent_pattern = r'<div class="suite-rate cell">\s*<span class="hide-desktop cell-title">.*?</span>\s*<span class="value">\$(\d+)</span>'
+    apt_number_pattern = r'<div class="suite-numbers cell">\s*<span class="hide-desktop cell-title">.*?</span>\s*<span class="suite-number">(\d+)</span>'
+    floor_pattern = r'<div class="suite-floor cell">\s*<span class="hide-desktop cell-title">.*?</span>\s*<span class="suite-number">(.*?)</span>'
+    
+    # Extract the data using the defined patterns
+    unit_types = re.findall(unit_type_pattern, webpage_content)
+    baths = re.findall(baths_pattern, webpage_content)
+    rents = re.findall(rent_pattern, webpage_content)
+    apt_numbers = re.findall(apt_number_pattern, webpage_content)
+    floors = re.findall(floor_pattern, webpage_content)
+    
+    # Get the current date
+    extraction_date = datetime.now().strftime('%Y-%m-%d')
+    
+    # Initialize a list to hold the extracted data
+    extracted_data = []
+    
+    # Combine the extracted data into dictionaries
+    for unit_type, bath, rent, apt_number, floor in zip(unit_types, baths, rents, apt_numbers, floors):
+        extracted_data.append({
+            'unit_type': unit_type.strip(),
+            'baths': bath.strip(),
+            'rent': f'${rent} per month',
+            'apartment_number': apt_number.strip(),
+            'floor': floor.strip(),
+            'date_extracted': extraction_date
+        })
+    
+    # Print or save the extracted data (for demonstration purposes, printing it)
+    print(json.dumps(extracted_data, indent=4))
+    
+    # Save the extracted data to a JSON file
+    data_file = './data/data.json'
+    os.makedirs(os.path.dirname(data_file), exist_ok=True)
+    with open(data_file, 'w') as outfile:
+        json.dump(extracted_data, outfile, indent=4)
+else:
+    print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
