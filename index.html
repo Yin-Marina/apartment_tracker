@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartment Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apartment Data</h1>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Type</th>
+                <th>Bathrooms</th>
+                <th>Price</th>
+                <th>Check-in Date</th>
+                <th>Date Extracted</th>
+                <th>Apartment</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script>
+        fetch('data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector('#data-table tbody');
+                data.forEach(entry => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${entry.index}</td>
+                        <td>${entry.type}</td>
+                        <td>${entry.bathrooms}</td>
+                        <td>${entry.price}</td>
+                        <td>${entry.checkin_date}</td>
+                        <td>${entry.date_extracted}</td>
+                        <td>${entry.apartment}</td>
+                        <td>${entry.company}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>
