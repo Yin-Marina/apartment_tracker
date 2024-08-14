@@ -33,14 +33,14 @@
             <table id="data-table" class="table table-striped table-bordered">
                 <thead class="table-dark">
                     <tr>
+                        <th>Apartment</th>
+                        <th>Company</th>
                         <th>Index</th>
                         <th>Type</th>
                         <th>Bathrooms</th>
                         <th>Price</th>
                         <th>Check-in Date</th>
                         <th>Date Extracted</th>
-                        <th>Apartment</th>
-                        <th>Company</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,15 +64,22 @@
                 const tableBody = document.querySelector('#data-table tbody');
                 data.forEach(entry => {
                     const row = document.createElement('tr');
+                    // Add a conditional class if the apartment is "Carlisle"
+                    if (entry.apartment === "Carlisle") {
+                        row.classList.add('bg-gradient-primary');
+                    }
+                    if (entry.company === "Fleming") {
+                        row.classList.add('bg-gradient-secondary');
+                    }
                     row.innerHTML = `
+                        <td>${entry.apartment}</td>
+                        <td>${entry.company}</td>
                         <td>${entry.index}</td>
                         <td>${entry.type}</td>
                         <td>${entry.bathrooms}</td>
                         <td>${entry.price}</td>
                         <td>${entry.checkin_date}</td>
                         <td>${entry.date_extracted}</td>
-                        <td>${entry.apartment}</td>
-                        <td>${entry.company}</td>
                     `;
                     tableBody.appendChild(row);
                 });
