@@ -3,6 +3,7 @@ import re
 import json
 from datetime import datetime
 import os
+import subprocess
 
 # Define the URL
 url = "https://www.mintoapartments.com/ottawa/apartment-rentals/The-Carlisle/main.html#suites-rates"
@@ -65,7 +66,6 @@ if response.status_code == 200:
                 'price': f'${suite_price} per month',
                 'checkin_date': checkin_date,
                 'date_extracted': extraction_date
-
             })
         
         # Append the new data to the existing data
@@ -76,6 +76,14 @@ if response.status_code == 200:
             json.dump(existing_data, outfile, indent=4)
         
         print("New data extracted and appended successfully!")
+        
+        # Git commands to commit and push the changes
+        subprocess.run(["git", "config", "--local", "user.email", "github-actions[bot]@users.noreply.github.com"])
+        subprocess.run(["git", "config", "--local", "user.name", "GitHub Actions"])
+        subprocess.run(["git", "add", data_file])
+        subprocess.run(["git", "commit", "-m", "Update data.json with new apartment data"])
+        subprocess.run(["git", "push", "origin", "main"])
+        
     else:
         print("Data for today has already been extracted.")
 else:
