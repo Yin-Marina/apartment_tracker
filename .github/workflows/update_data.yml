@@ -58,10 +58,9 @@ jobs:
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
-          git remote set-url origin $PAT_TOKEN
+          git remote set-url origin https://$PAT_TOKEN@github.com/Yin-Marina/apartment_tracker.git
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Actions"
-          git status
-          git add ./data/data.json
-          git commit -m "Update data.json"
-          git push origin HEAD:master
+          git add ./data/data.json ./doc/index.html
+          git commit -m "Update data.json and regenerate index.html"
+          git push origin HEAD:main
