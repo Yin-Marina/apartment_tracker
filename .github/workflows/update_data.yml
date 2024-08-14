@@ -59,6 +59,8 @@ jobs:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: |
           git remote set-url origin $PAT_TOKEN
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions"
           git status
           git add ./data/data.json
           git commit -m "Update data.json"
