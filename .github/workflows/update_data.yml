@@ -40,7 +40,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Actions"
           git add ./data/data.json
-          git add index.html
-          git commit -m "Update data.json and regenerate index.html"
+          git commit -m "Update data.json"
           git push origin main
 
