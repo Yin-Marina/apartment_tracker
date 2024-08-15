@@ -95,7 +95,7 @@ def fetch_minto_data(url):
             with open(minto_data_dir, 'w') as outfile:
                 json.dump(existing_minto_data, outfile, indent=4)
         
-            print("New data extracted and appended successfully!")
+            print("New minto data extracted and appended successfully!")
         
         
         else:
@@ -106,7 +106,7 @@ def fetch_minto_data(url):
     except Exception as err:
         print(f"Other error occurred: {err}")
 
-
+# ----------------------------------------------------------------
 
 def fetch_data(url):
     # Send a GET request to the webpage
@@ -162,6 +162,8 @@ def fetch_data(url):
 # Define the path to the data file
 fleming_data_dir = './data/fleming_data.json'
 
+
+
 # Define fleming URL
 fleming_urls = [
     "https://www.fpm.ca/residential/328-frank-st",
@@ -192,14 +194,89 @@ def fetch_fleming_data(urls):
                 # Append the new data to the existing data
                 existing_fleming_data.extend(data_cache)
             with open(fleming_data_dir, 'w') as outfile:
-                print(existing_fleming_data)
+                # Save the updated data to the JSON file
                 json.dump(existing_fleming_data, outfile, indent=4)        
         except json.JSONDecodeError:
             print("Error: data.json is not a valid JSON file.")
+
+
+
+# ----------------------------------------------------------------
+
+
+jb_url = 'https://www.jbholdingsinc.ca/buyers/available-apartments'
+# Define the path to the data file
+jb_data_dir = './data/jb_data.json'
+
+def fetch_jb_data(url):
+    try:
+        # Send a GET request to the webpage
+        response = requests.get(url)
+
+        # Check if the request was successful
+        if response.status_code == 200:
+            # Extract the content of the webpage as text
+            webpage_content = response.text
+            # Extract data from each project apartment unit card
+            unit_cards = BeautifulSoup(webpage_content, 'html.parser').find_all('div', class_=re.compile(r'\blisting-item\b'))
+
+            # Initialize lists to store extracted data
+            locations = []
+            suite_types =[]
+            links = []
+
+            # Loop through each card and extract the relevant data
+            for card in unit_cards:
+                location = card.find('h3', class_='listing-address').text.strip()
+                suite_type = [div.text.strip() for div in card.find_all('div', class_='listing-type')][0]
+                link = card.find('a')['href']
+                
+                locations.append(location)
+                suite_types.append(suite_type)
+                links.append(link)
+
+            # Initialize an empty list for existing data
+            existing_jb_data = []
     
+            # Ensure the data directory exists
+            os.makedirs(os.path.dirname(jb_data_dir), exist_ok=True)
+
+            # Check if the data.json file exists and is not empty
+            if os.path.exists(jb_data_dir) and os.path.getsize(jb_data_dir) > 0:
+                try:
+                    with open(jb_data_dir, 'r') as infile:
+                        existing_jb_data = json.load(infile)
+                except json.JSONDecodeError:
+                    print("Error: data.json is not a valid JSON file.")
+    
+
+            for location, suite_type, link in zip(locations, suite_types, links):
+                new_data = {
+                    'apartment': location,
+                    'company': 'JBHoldings',
+                    'type': f'{suite_type} Bedroom(s)',
+                    'link' : f'https://www.jbholdingsinc.ca/{link}',
+                    'date_extracted': extraction_date.strip()
+                }
+                print(new_data)
+
+            # Append the new data to the existing data
+            existing_jb_data.append(new_data)
         
-        # Save the updated data to the JSON file
+            # Save the updated data to the JSON file
+            with open(jb_data_dir, 'w') as outfile:
+                json.dump(existing_jb_data, outfile, indent=4)
         
+            print("New JB data extracted and appended successfully!")
+        
+        
+        else:
+            print("Data for today has already been extracted.")
+
+    except requests.exceptions.HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err}")
+    except Exception as err:
+        print(f"Other error occurred: {err}")       
         
 
 
@@ -207,6 +284,8 @@ def main():
     fetch_minto_data(minto_url)
 
     fetch_fleming_data(fleming_urls)
+
+    fetch_jb_data(jb_url)
 
 
 if __name__ == "__main__":

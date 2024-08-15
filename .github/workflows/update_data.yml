@@ -37,6 +37,7 @@ jobs:
         run: |
           curl -o ./data/minto_data.json https://raw.githubusercontent.com/Yin-Marina/apartment_tracker/main/data/minto_data.json
           curl -o ./data/fleming_data.json https://raw.githubusercontent.com/Yin-Marina/apartment_tracker/main/data/fleming_data.json
+          curl -o ./data/jb_data.json https://raw.githubusercontent.com/Yin-Marina/apartment_tracker/main/data/jb_data.json
       # Step 3: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -63,5 +64,6 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add ./data/minto_data.json
           git add ./data/fleming_data.json
+          git add ./data/jb_data.json
           git commit -m "Update data.json"
           git push origin HEAD:main
