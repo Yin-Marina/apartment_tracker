@@ -146,7 +146,7 @@ def fetch_data(url):
                 'index': apt_number.strip(),
                 'type': unit_type.strip(),
                 'bathrooms': f'{baths} Bathroom(s)',
-                'price': f'${rent} per month',
+                'price': f'{rent} per month',
                 'checkin_date': date_text.strip(),
                 'date_extracted': extraction_date.strip()
             }
