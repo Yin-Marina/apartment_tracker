@@ -35,8 +35,8 @@ jobs:
       # Step 2: Download the latest data.json file from the repository
       - name: Download data.json
         run: |
-          curl -o ./data/data.json https://raw.githubusercontent.com/Yin-Marina/apartment_tracker/main/data/data.json
-
+          curl -o ./data/minto_data.json https://raw.githubusercontent.com/Yin-Marina/apartment_tracker/main/data/minto_data.json
+          curl -o ./data/fleming_data.json https://raw.githubusercontent.com/Yin-Marina/apartment_tracker/main/data/fleming_data.json
       # Step 3: Set up Python environment
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -47,7 +47,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests beautifulsoup4
 
       # Step 5: Run the data extraction script
       - name: Run script to update data
@@ -61,6 +61,7 @@ jobs:
           git remote set-url origin https://$PAT_TOKEN@github.com/Yin-Marina/apartment_tracker.git
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "GitHub Actions"
-          git add ./data/data.json
+          git add ./data/minto_data.json
+          git add ./data/fleming_data.json
           git commit -m "Update data.json"
           git push origin HEAD:main

@@ -27,10 +27,31 @@
 <body>
 
     <div class="container">
-        <h1 class="text-center">Apartment Data</h1>
+        <h1 class="text-center">Minto Data</h1>
         
         <div class="table-responsive">
-            <table id="data-table" class="table table-striped table-bordered">
+            <table id="data-table-minto" class="table table-striped table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Apartment</th>
+                        <th>Company</th>
+                        <th>Index</th>
+                        <th>Type</th>
+                        <th>Bathrooms</th>
+                        <th>Price</th>
+                        <th>Check-in Date</th>
+                        <th>Date Extracted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <h1 class="text-center">Fleming Data</h1>
+
+        <div class="table-responsive">
+            <table id="data-table-fleming" class="table table-striped table-bordered">
                 <thead class="table-dark">
                     <tr>
                         <th>Apartment</th>
@@ -58,16 +79,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
     <script>
-        fetch('./data/data.json')
+        // Fetch and populate Minto data
+        fetch('./data/minto_data.json')
             .then(response => response.json())
             .then(data => {
-                const tableBody = document.querySelector('#data-table tbody');
+                const tableBodyMinto = document.querySelector('#data-table-minto tbody');
                 data.forEach(entry => {
                     const row = document.createElement('tr');
-                    // Add a conditional class if the apartment is "Carlisle"
-                    if (entry.apartment === "Carlisle") {
-                        row.classList.add('bg-gradient-primary');
-                    }
                     row.innerHTML = `
                         <td>${entry.apartment}</td>
                         <td>${entry.company}</td>
@@ -78,7 +96,28 @@
                         <td>${entry.checkin_date}</td>
                         <td>${entry.date_extracted}</td>
                     `;
-                    tableBody.appendChild(row);
+                    tableBodyMinto.appendChild(row);
+                });
+            });
+
+        // Fetch and populate Fleming data
+        fetch('./data/Fleming_data.json')
+            .then(response => response.json())
+            .then(data => {
+                const tableBodyFleming = document.querySelector('#data-table-fleming tbody');
+                data.forEach(entry => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${entry.apartment}</td>
+                        <td>${entry.company}</td>
+                        <td>${entry.index}</td>
+                        <td>${entry.type}</td>
+                        <td>${entry.bathrooms}</td>
+                        <td>${entry.price}</td>
+                        <td>${entry.checkin_date}</td>
+                        <td>${entry.date_extracted}</td>
+                    `;
+                    tableBodyFleming.appendChild(row);
                 });
             });
     </script>
