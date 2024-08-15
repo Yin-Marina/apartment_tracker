@@ -140,27 +140,21 @@ def fetch_data(url):
             date_text = card.find('div', class_='suite-availability').find('a').get_text(strip=True)
 
             # Combine the extracted data into a dictionary
-            extracted_data.append({
-                'apartment': location,
+            data_record = {
+                'apartment': location.strip(),
                 'company': 'Fleming',
-                'index': apt_number,
-                'type': unit_type,
+                'index': apt_number.strip(),
+                'type': unit_type.strip(),
                 'bathrooms': f'{baths} Bathroom(s)',
                 'price': f'${rent} per month',
-                'checkin_date': date_text,
-                'date_extracted': extraction_date
-            })
+                'checkin_date': date_text.strip(),
+                'date_extracted': extraction_date.strip()
+            }
 
-        # Print or save the extracted data (for demonstration purposes, printing it)
-        print("fleming extracted data:")
-        print(json.dumps(extracted_data, indent=4))
-        
-        # Save the extracted data to a JSON file
-        data_file = './data/fleming_data.json'
-        os.makedirs(os.path.dirname(data_file), exist_ok=True)
-        with open(data_file, 'w') as outfile:
-            json.dump(extracted_data, outfile, indent=4)
-            return extracted_data
+            extracted_data.append(data_record)
+
+        return extracted_data
+ 
     else:
         print(f"Failed to retrieve the webpage. Status code: {response.status_code}")
     
@@ -183,62 +177,30 @@ fleming_urls = [
 ]
 
 def fetch_fleming_data(urls):
-
-
-    extracted_data = []
-
-    for url in urls:
-        data = fetch_data(url)
-        if data:
-            extracted_data.append(data)
-    
     # Ensure the data directory exists
     os.makedirs(os.path.dirname(fleming_data_dir), exist_ok=True)
-
+    data_cache = []
+    existing_fleming_data = []
+    for url in urls:
+        data = fetch_data(url)
+        data_cache.extend(data)
     # Check if the data.json file exists and is not empty
     if os.path.exists(fleming_data_dir) and os.path.getsize(fleming_data_dir) > 0:
         try:
             with open(fleming_data_dir, 'r') as infile:
                 existing_fleming_data = json.load(infile)
+                # Append the new data to the existing data
+                existing_fleming_data.extend(data_cache)
+            with open(fleming_data_dir, 'w') as outfile:
+                print(existing_fleming_data)
+                json.dump(existing_fleming_data, outfile, indent=4)        
         except json.JSONDecodeError:
             print("Error: data.json is not a valid JSON file.")
     
-        # Check the date of the last entry
-        last_entry_date = existing_fleming_data[-1]['date_extracted'] if existing_fleming_data else None
-        last_entry_date = last_entry_date.split(" ")[0] if last_entry_date else None
-    
-        # Only add new data if the date is different
-        if last_entry_date != extraction_date:
         
-            # Append the new data to the existing data
-            existing_fleming_data.extend(extracted_data)
+        # Save the updated data to the JSON file
         
-            # Save the updated data to the JSON file
-            with open(fleming_data_dir, 'w') as outfile:
-                json.dump(existing_fleming_data, outfile, indent=4)
         
-            print("New data extracted and appended successfully!")
-        
-        else:
-            print("Data for today has already been extracted.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 def main():
