@@ -40,5 +40,12 @@
         "type": "2 Bedroom Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/15-regent-street",
         "date_extracted": "2024-08-28"
+    },
+    {
+        "apartment": "15 Regent Street",
+        "company": "JBHoldings",
+        "type": "2 Bedroom Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/15-regent-street",
+        "date_extracted": "2024-08-31"
     }
 ]
