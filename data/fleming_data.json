@@ -1788,5 +1788,45 @@
         "price": "$2400 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2024-10-04"
+    },
+    {
+        "apartment": "328 Frank St.",
+        "company": "Fleming",
+        "index": "10",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1400 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-10-07"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "8",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-10-07"
+    },
+    {
+        "apartment": "76 Flora St",
+        "company": "Fleming",
+        "index": "2",
+        "type": "3 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2200 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-10-07"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "1",
+        "type": "4 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2400 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-10-07"
     }
 ]
