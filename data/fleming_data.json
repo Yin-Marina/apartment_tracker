@@ -1828,5 +1828,25 @@
         "price": "$2400 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2024-10-07"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "8",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-10-10"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "1",
+        "type": "4 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2400 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-10-10"
     }
 ]
