@@ -1988,5 +1988,15 @@
         "price": "$2400 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2024-11-01"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "1",
+        "type": "4 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2400 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-11-04"
     }
 ]
