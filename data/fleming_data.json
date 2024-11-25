@@ -2118,5 +2118,25 @@
         "price": "$1800 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2024-11-22"
+    },
+    {
+        "apartment": "407 Queen St.",
+        "company": "Fleming",
+        "index": "3",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2200 per month",
+        "checkin_date": "Jan 01, 2025",
+        "date_extracted": "2024-11-25"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "1",
+        "type": "2 Bedroom - Short Term Lease till April 30th",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1800 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2024-11-25"
     }
 ]
