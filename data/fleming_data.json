@@ -2398,5 +2398,35 @@
         "price": "$2000 per month",
         "checkin_date": "Feb 01, 2025",
         "date_extracted": "2025-01-04"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "8",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Mar 01, 2025",
+        "date_extracted": "2025-01-07"
+    },
+    {
+        "apartment": "407 Queen St.",
+        "company": "Fleming",
+        "index": "3",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2200 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2025-01-07"
+    },
+    {
+        "apartment": "414 Albert St.",
+        "company": "Fleming",
+        "index": "1",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "Feb 01, 2025",
+        "date_extracted": "2025-01-07"
     }
 ]
