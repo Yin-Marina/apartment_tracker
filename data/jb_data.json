@@ -348,5 +348,12 @@
         "type": "1 Bedroom Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/28-pretoria-avenue",
         "date_extracted": "2025-01-19"
+    },
+    {
+        "apartment": "73 Harvey Street",
+        "company": "JBHoldings",
+        "type": "2 Bedroom Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/73-harvey-street",
+        "date_extracted": "2025-01-22"
     }
 ]
