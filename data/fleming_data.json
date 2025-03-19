@@ -2878,5 +2878,15 @@
         "price": "$2100 per month",
         "checkin_date": "May 01, 2025",
         "date_extracted": "2025-03-16"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "6",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2100 per month",
+        "checkin_date": "May 01, 2025",
+        "date_extracted": "2025-03-19"
     }
 ]
