@@ -4298,5 +4298,55 @@
         "price": "$4795 per month",
         "checkin_date": "2025-05-17",
         "date_extracted": "2025-04-13"
+    },
+    {
+        "apartment": "Carlisle",
+        "company": "Minto",
+        "index": "322",
+        "type": "1.0 Bedroom(s)",
+        "bathrooms": "1.5 Bathroom(s)",
+        "price": "$0 per month",
+        "checkin_date": "Waitlist",
+        "date_extracted": "2025-04-16"
+    },
+    {
+        "apartment": "Carlisle",
+        "company": "Minto",
+        "index": "1024",
+        "type": "1.0 Bedroom(s)",
+        "bathrooms": "1.5 Bathroom(s)",
+        "price": "$0 per month",
+        "checkin_date": "Waitlist",
+        "date_extracted": "2025-04-16"
+    },
+    {
+        "apartment": "Carlisle",
+        "company": "Minto",
+        "index": "323",
+        "type": "2.0 Bedroom(s)",
+        "bathrooms": "2.0 Bathroom(s)",
+        "price": "$2955 per month",
+        "checkin_date": "2025-04-15",
+        "date_extracted": "2025-04-16"
+    },
+    {
+        "apartment": "Carlisle",
+        "company": "Minto",
+        "index": "325",
+        "type": "1.0 Bedroom(s)",
+        "bathrooms": "1.5 Bathroom(s)",
+        "price": "$0 per month",
+        "checkin_date": "Waitlist",
+        "date_extracted": "2025-04-16"
+    },
+    {
+        "apartment": "Carlisle",
+        "company": "Minto",
+        "index": "326",
+        "type": "2.0 Bedroom(s)",
+        "bathrooms": "2.0 Bathroom(s)",
+        "price": "$0 per month",
+        "checkin_date": "Waitlist",
+        "date_extracted": "2025-04-16"
     }
 ]
