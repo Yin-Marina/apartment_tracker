@@ -579,5 +579,12 @@
         "type": "1 Bedroom Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/341-345-whitby",
         "date_extracted": "2025-04-22"
+    },
+    {
+        "apartment": "341 & 345 Whitby Avenue",
+        "company": "JBHoldings",
+        "type": "1 Bedroom Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/341-345-whitby",
+        "date_extracted": "2025-04-25"
     }
 ]
