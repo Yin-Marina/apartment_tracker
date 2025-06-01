@@ -3168,5 +3168,15 @@
         "price": "$1700 per month",
         "checkin_date": "Jul 01, 2025",
         "date_extracted": "2025-05-31"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "18",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Jul 01, 2025",
+        "date_extracted": "2025-06-01"
     }
 ]
