@@ -747,5 +747,12 @@
         "type": "2 Bedroom Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/508-oconnor-street",
         "date_extracted": "2025-07-01"
+    },
+    {
+        "apartment": "508 O'Connor Street",
+        "company": "JBHoldings",
+        "type": "2 Bedroom Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/508-oconnor-street",
+        "date_extracted": "2025-07-04"
     }
 ]
