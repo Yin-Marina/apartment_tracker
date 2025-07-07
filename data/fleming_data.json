@@ -3308,5 +3308,35 @@
         "price": "$1650 per month",
         "checkin_date": "Sep 01, 2025",
         "date_extracted": "2025-07-04"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "20",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2025",
+        "date_extracted": "2025-07-07"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "23",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2025",
+        "date_extracted": "2025-07-07"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "19",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2025",
+        "date_extracted": "2025-07-07"
     }
 ]
