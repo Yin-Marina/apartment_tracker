@@ -803,5 +803,12 @@
         "type": "2 Bedroom Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/38-monk-street",
         "date_extracted": "2025-07-25"
+    },
+    {
+        "apartment": "38 Monk Street",
+        "company": "JBHoldings",
+        "type": "2 Bedroom Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/38-monk-street",
+        "date_extracted": "2025-07-28"
     }
 ]
