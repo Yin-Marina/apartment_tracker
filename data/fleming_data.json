@@ -3878,5 +3878,55 @@
         "price": "$1550 per month",
         "checkin_date": "Sep 01, 2025",
         "date_extracted": "2025-08-13"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "17",
+        "type": "Bachelor Apartment",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1550 per month",
+        "checkin_date": "Oct 01, 2025",
+        "date_extracted": "2025-08-16"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "4",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Oct 01, 2025",
+        "date_extracted": "2025-08-16"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "23",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1600 per month",
+        "checkin_date": "Sep 01, 2025",
+        "date_extracted": "2025-08-16"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "17",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1350 per month",
+        "checkin_date": "Sep 01, 2025",
+        "date_extracted": "2025-08-16"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "15",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Oct 01, 2025",
+        "date_extracted": "2025-08-16"
     }
 ]
