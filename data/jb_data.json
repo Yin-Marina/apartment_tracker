@@ -887,5 +887,12 @@
         "type": "Bachelor Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/28-pretoria-avenue",
         "date_extracted": "2025-08-28"
+    },
+    {
+        "apartment": "28 Pretoria Avenue",
+        "company": "JBHoldings",
+        "type": "Bachelor Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/28-pretoria-avenue",
+        "date_extracted": "2025-08-31"
     }
 ]
