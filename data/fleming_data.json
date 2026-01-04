@@ -5678,5 +5678,45 @@
         "price": "$1500 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2026-01-01"
+    },
+    {
+        "apartment": "328 Frank St.",
+        "company": "Fleming",
+        "index": "7",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1500 per month",
+        "checkin_date": "Feb 01, 2026",
+        "date_extracted": "2026-01-04"
+    },
+    {
+        "apartment": "328 Frank St.",
+        "company": "Fleming",
+        "index": "5",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1750 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-01-04"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "18",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1450 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-01-04"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "16",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1500 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-01-04"
     }
 ]
