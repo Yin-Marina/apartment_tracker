@@ -6088,5 +6088,55 @@
         "price": "$1700 per month",
         "checkin_date": "Mar 01, 2026",
         "date_extracted": "2026-01-25"
+    },
+    {
+        "apartment": "328 Frank St.",
+        "company": "Fleming",
+        "index": "7",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1500 per month",
+        "checkin_date": "Feb 01, 2026",
+        "date_extracted": "2026-01-28"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "18",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1450 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-01-28"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "16",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1500 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-01-28"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "8",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Mar 01, 2026",
+        "date_extracted": "2026-01-28"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "5",
+        "type": "1 Bedroom + Den",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Mar 01, 2026",
+        "date_extracted": "2026-01-28"
     }
 ]
