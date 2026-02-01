@@ -1265,5 +1265,12 @@
         "type": "1 Bedroom Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/28-pretoria-avenue",
         "date_extracted": "2026-01-31"
+    },
+    {
+        "apartment": "28 Pretoria Avenue",
+        "company": "JBHoldings",
+        "type": "1 Bedroom Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/28-pretoria-avenue",
+        "date_extracted": "2026-02-01"
     }
 ]
