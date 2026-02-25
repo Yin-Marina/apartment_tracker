@@ -1321,5 +1321,12 @@
         "type": " Bedroom(s)",
         "link": "https://www.jbholdingsinc.ca//listing/73-harvey-street",
         "date_extracted": "2026-02-22"
+    },
+    {
+        "apartment": "73 Harvey Street",
+        "company": "JBHoldings",
+        "type": " Bedroom(s)",
+        "link": "https://www.jbholdingsinc.ca//listing/73-harvey-street",
+        "date_extracted": "2026-02-25"
     }
 ]
