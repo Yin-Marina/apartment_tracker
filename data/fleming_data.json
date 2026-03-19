@@ -6918,5 +6918,35 @@
         "price": "$2000 per month",
         "checkin_date": "May 01, 2026",
         "date_extracted": "2026-03-16"
+    },
+    {
+        "apartment": "387 Daly Ave",
+        "company": "Fleming",
+        "index": "3",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1600 per month",
+        "checkin_date": "May 01, 2026",
+        "date_extracted": "2026-03-19"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "8",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1600 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-03-19"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "2",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "May 01, 2026",
+        "date_extracted": "2026-03-19"
     }
 ]
