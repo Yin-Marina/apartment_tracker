@@ -8218,5 +8218,95 @@
         "price": "$2000 per month",
         "checkin_date": "Jul 01, 2026",
         "date_extracted": "2026-06-01"
+    },
+    {
+        "apartment": "328 Frank St.",
+        "company": "Fleming",
+        "index": "4",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1600 per month",
+        "checkin_date": "Jul 01, 2026",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "7",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2200 per month",
+        "checkin_date": "Aug 01, 2026",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "3",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Jul 01, 2026",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "6",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Jul 01, 2026",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "14",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1400 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "3",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1900 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "414 Albert St.",
+        "company": "Fleming",
+        "index": "7",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Aug 01, 2026",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "261 Fifth Ave.",
+        "company": "Fleming",
+        "index": "1",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Jul 01, 2026",
+        "date_extracted": "2026-06-04"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "2",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "Jul 01, 2026",
+        "date_extracted": "2026-06-04"
     }
 ]
