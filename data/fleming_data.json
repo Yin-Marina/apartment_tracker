@@ -9168,5 +9168,95 @@
         "price": "$1900 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2026-07-07"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "3",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "6",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "10",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "14",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1400 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "15",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "3",
+        "type": "1 Bedroom plus 1 Den",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1750 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "414 Albert St.",
+        "company": "Fleming",
+        "index": "14",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "76 Flora St",
+        "company": "Fleming",
+        "index": "2",
+        "type": "3 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2400 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-07-10"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "2",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1900 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-10"
     }
 ]
