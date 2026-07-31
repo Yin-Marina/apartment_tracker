@@ -9708,5 +9708,55 @@
         "price": "$1900 per month",
         "checkin_date": "Available Now",
         "date_extracted": "2026-07-28"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "3",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-31"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "10",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-07-31"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "14",
+        "type": "Bachelor",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1350 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-31"
+    },
+    {
+        "apartment": "200 Laurier Ave. East",
+        "company": "Fleming",
+        "index": "3",
+        "type": "1 Bedroom plus Den",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1700 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-31"
+    },
+    {
+        "apartment": "60 Russell Ave.",
+        "company": "Fleming",
+        "index": "2",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1900 per month",
+        "checkin_date": "Available Now",
+        "date_extracted": "2026-07-31"
     }
 ]
