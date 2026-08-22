@@ -9948,5 +9948,25 @@
         "price": "$1650 per month",
         "checkin_date": "Sep 01, 2026",
         "date_extracted": "2026-08-19"
+    },
+    {
+        "apartment": "430 Daly Ave.",
+        "company": "Fleming",
+        "index": "8",
+        "type": "2 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$2000 per month",
+        "checkin_date": "Oct 01, 2026",
+        "date_extracted": "2026-08-22"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "10",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-08-22"
     }
 ]
