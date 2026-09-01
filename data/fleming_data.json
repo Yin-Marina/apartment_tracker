@@ -10008,5 +10008,15 @@
         "price": "$1650 per month",
         "checkin_date": "Sep 01, 2026",
         "date_extracted": "2026-08-31"
+    },
+    {
+        "apartment": "195 Cooper St.",
+        "company": "Fleming",
+        "index": "10",
+        "type": "1 Bedroom",
+        "bathrooms": "1 Bathroom(s)",
+        "price": "$1650 per month",
+        "checkin_date": "Sep 01, 2026",
+        "date_extracted": "2026-09-01"
     }
 ]
